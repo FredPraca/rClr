@@ -61,7 +61,7 @@ PKG_LIBS =		-mms-bitfields -mwindows -L"$(MONO_INSTALL_PATH64)/" -lmono-2.0 -lws
 # PKG_LIBS =		-mms-bitfields -mwindows -LF:/bin/mono_built/lib -LF:/bin/mono_built/bin -lmono-2.0 -lws2_32 -lpsapi -lole32 -lwinmm -loleaut32 -ladvapi32 -lversion
 endif  ## ifeq "$(R_ARCH)" "/x64"
 
-RCLRBINDIRFACADE= ./$(BuildConfiguration)
+RCLRBINDIRFACADE= ClrFacade/$(BuildConfiguration)
 
 else  ## the OS is not 'windows'
 ifeq "$(BUILDTYPE)" "Release"
